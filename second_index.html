@@ -20,21 +20,31 @@
         /* text */
         .container p {
             font-size: 1.3rem;
-            
+       
         }
+	  #second{display:none}
     </style>
+
+	<script>
+        function show() {
+ 
+            var text = document.getElementById("first");
+            text.style.display = "none";
+            var text1 = document.getElementById("second");
+            text1.style.display = "block";
+        }
+    </script>
 </head>
-<body>
+<body onclick='show()'>
     <div class="container">
         <img src="exchange.jpg" alt="exchange.jpg">
-        <p>The Exchange Building at the University of Nottingham's Jubilee Campus is a modern teaching and learning center that provides a state-of-the-art learning and social space designed to facilitate interaction and collaboration between students and staff.
+        <p id='first'>The Exchange Building at the University of Nottingham's Jubilee Campus is a modern teaching and learning center that provides a state-of-the-art learning and social space designed to facilitate interaction and collaboration between students and staff.
 
 The Exchange Building was built in 2015 and is one of the new buildings on the Jubilee Campus. Located in the middle of the campus, it is an eight-storey building with a footprint of approximately 17,000 square metres. The building's design was inspired by nearby historic buildings and regional culture, such as Nottingham Castle and Robin Hood.
 
 Facilities inside the Exchange Building include a large learning center with various types of study spaces, including study rooms, group study rooms and computer rooms. In addition, the building features several classrooms, meeting rooms and seminar rooms that can support academic and social events of all sizes. The building also has modern music and film recording studios that provide students with opportunities to create and learn
-
-You have successfully collected this treasure, please continue to the next location, the next location is the school of computer science.
 </p>
+<p id='second'>You have successfully collected this treasure, please continue to the next location, the next location is the school of computer science.</p>
     </div>
 </body>
 </html>
