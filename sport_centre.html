@@ -22,18 +22,27 @@
             font-size: 1.3rem;
            
         }
+	#second{display:none}
     </style>
+<script>
+        function show() {
+ 
+            var text = document.getElementById("first");
+            text.style.display = "none";
+            var text1 = document.getElementById("second");
+            text1.style.display = "block";
+        }
+    </script>
 </head>
-<body>
+<body onclick='show()'>
     <div class="container">
         <img src="sport_centre.jpg" alt="sport_centre.jpg">
-        <p>The Jubilee Sports Centre is the main sports facility at the University of Nottingham's Jubilee Campus and is located in the heart of the campus, providing a wide range of sports facilities and activity areas for students and staff.
+        <p id='first'>The Jubilee Sports Centre is the main sports facility at the University of Nottingham's Jubilee Campus and is located in the heart of the campus, providing a wide range of sports facilities and activity areas for students and staff.
 
 The Jubilee Sports Centre has modern facilities and equipment, including an indoor sports hall, indoor swimming pool, gymnasium, health and beauty center, tennis courts, badminton courts and squash courts to name but a few. The center also offers a variety of fitness classes and training sessions for students and staff, such as yoga, Pilates, dance, aerobics, etc., as well as various group fitness activities and sports teams, such as soccer, basketball, tennis, volleyball teams, etc.
 
-
-Congratulations on completing this campus scavenger hunt. I believe you have gained a lot of knowledge about the campus and already know more about it, our school is a very beautiful and excellent school. I hope you will learn more here and achieve your dreams and goals in life!
 </p>
+<p id='second'>Congratulations on completing this campus scavenger hunt. I believe you have gained a lot of knowledge about the campus and already know more about it, our school is a very beautiful and excellent school. I hope you will learn more here and achieve your dreams and goals in life!</p>
     </div>
 </body>
 </html>
